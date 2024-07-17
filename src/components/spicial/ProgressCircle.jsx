@@ -3,12 +3,7 @@ import { useEffect, useRef } from "react";
 
 const PieChart = ({ width = 100, height = 100 }) => {
   // Mock data for pie chart (replace with your actual data)
-  const data = [
-    { id: "A", label: "Category A", value: 300 },
-    { id: "B", label: "Category B", value: 400 },
-    { id: "C", label: "Category C", value: 200 },
-    { id: "D", label: "Category D", value: 100 },
-  ];
+  const data = [];
 
   // Mock colors (replace with your theme logic if necessary)
   const colors = ["#D1D5DB", "blue", "green", "red", "#ffff00"];

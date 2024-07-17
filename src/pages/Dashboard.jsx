@@ -2,17 +2,15 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable quotes */
 import React from "react";
-import { FaHandPointUp } from "react-icons/fa";
-import { IoCloudDownloadOutline, IoPersonAddOutline } from "react-icons/io5";
-import { MdOutlineMailOutline, MdOutlineTraffic } from "react-icons/md";
+import { IoCloudDownloadOutline } from "react-icons/io5";
 
 import Dashboar from "../components/Dashbord";
 import DateTime from "../components/spicial/Datetime";
 import LineChart from "../components/spicial/LineChart";
 import LinesChart from "../components/spicial/LinesChart";
-import ProgressCircle from "../components/spicial/ProgressCircle";
+// import ProgressCircle from "../components/spicial/ProgressCircle";
 import PyramidChart from "../components/spicial/PyramidChart ";
-import StatBox from "../components/spicial/StatBox";
+// import StatBox from "../components/spicial/StatBox";
 import { mockTransactions } from "../data/mockData";
 const Dashboard = () => {
   const colors = {
@@ -74,70 +72,7 @@ const Dashboard = () => {
             width: "98vw",
           }}
         >
-          <div
-            style={{
-              gridColumn: "span 3",
-              backgroundColor: colors.primary[400],
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <StatBox
-              title="12,361"
-              subtitle="Emails Sent"
-              progress="0.75"
-              increase="+14%"
-              icon={
-                <MdOutlineMailOutline
-                  style={{ color: colors.greenAccent[600], fontSize: "26px" }}
-                />
-              }
-            />
-          </div>
-          <div
-            style={{
-              gridColumn: "span 3",
-              backgroundColor: colors.primary[400],
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <StatBox
-              title="431,225"
-              subtitle="Sales Obtained"
-              progress="0.50"
-              increase="+21%"
-              icon={
-                <FaHandPointUp
-                  style={{ color: colors.greenAccent[600], fontSize: "26px" }}
-                />
-              }
-            />
-          </div>
-          <div
-            style={{
-              gridColumn: "span 3",
-              backgroundColor: colors.primary[400],
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <StatBox
-              title="32,441"
-              subtitle="New Clients"
-              progress="0.30"
-              increase="+5%"
-              icon={
-                <IoPersonAddOutline
-                  style={{ color: colors.greenAccent[600], fontSize: "26px" }}
-                />
-              }
-            />
-          </div>
-          <div
+          {/* <div
             style={{
               gridColumn: "span 3",
               backgroundColor: colors.primary[400],
@@ -157,7 +92,7 @@ const Dashboard = () => {
                 />
               }
             />
-          </div>
+          </div> */}
         </div>
 
         {/* ROW 2 */}
@@ -263,7 +198,7 @@ const Dashboard = () => {
         </div>
 
         {/* ROW 3 */}
-        <div
+        {/* <div
           style={{
             gridColumn: "span 4",
             gridRow: "span 2",
@@ -272,8 +207,8 @@ const Dashboard = () => {
             height: "fit-content",
           }}
         >
-          <h5 style={{ fontWeight: "600" }}>Campaign</h5>
-          <div
+      <h5 style={{ fontWeight: "600" }}>Campaign</h5>  
+         <div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -286,8 +221,8 @@ const Dashboard = () => {
               $48,352 revenue generated
             </h5>
             <p>Includes extra misc expenditures and costs</p>
-          </div>
-        </div>
+          </div>  
+        </div> */}
 
         {/* <div
           style={{

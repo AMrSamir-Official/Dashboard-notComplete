@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import ApexCharts from "apexcharts";
 import React, { useEffect } from "react";
 
